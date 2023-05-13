@@ -1,11 +1,13 @@
 <script>
-    import Display from "./Display.svelte";
-    import List from "./List.svelte";
+    import Display from "$lib/components/Display.svelte";
+    import List from "$lib/components/List.svelte";
+    import Input from "$lib/components/Input.svelte";
     import { onMount } from "svelte";
 
     let timezone;
     let time;
     let date;
+    let searchquery;
 
     onMount(() => {
     const interval = setInterval(() => {
@@ -41,5 +43,6 @@
 
 <div>
     <Display {time} {date} {timezone}/>
-    <List bind:timezone={timezone}/>
+    <List bind:timezone={timezone} bind:searchquery={searchquery}/>
+    <Input bind:searchquery={searchquery}/>
 </div>

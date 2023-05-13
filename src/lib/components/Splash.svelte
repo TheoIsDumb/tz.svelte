@@ -11,7 +11,7 @@
             <span>made with svelte.</span>
         </div>
 
-        <button on:click={() => visible = !visible}>Click to start</button>
+        <button class="splash" on:click={() => visible = !visible}>Click to start</button>
     </div>
 {/if}
 

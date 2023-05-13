@@ -1,10 +1,13 @@
 @font-face {
-    font-family: "sfpro";
-    src: url('sfpro.woff2');
+  font-display: swap;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/inter-tight-v2-latin-regular.woff2') format('woff2');
 }
 
 * {
-    font-family: "sfpro", sans-serif;
+    font-family: "Inter Tight", sans-serif;
 }
 
 main {
@@ -86,7 +89,7 @@ body > footer {
     }
 }
 
-button {
+button.splash {
 	background-color: #fff;
 	color: #000;
 	font-size: 1.1rem;
@@ -94,9 +97,8 @@ button {
 	border: 2px solid white;
 	border-radius: 0.2rem;
 	transition: all ease-in-out 300ms;
-	font-family: "sfpro", sans-serif;
 }
 
-button:hover {
+button.splash:hover {
   transform: scale(1.1);
 }
